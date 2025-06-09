@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&display=swap");
+
+* {
+margin: 0;
+padding: 0;
+font-family: "IBM Plex Sans", sans-serif;
+box-sizing: border-box;
+text-decoration: none;
+}
+
+body {
+height: 100vh;
+background-color: #0f1518;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.profile-card {
+width: 400px;
+text-align: center;
+border-radius: 8px;
+overflow: hidden;
+}
+
+.card-header {
+background: #1e2f3b;
+padding: 60px 40px;
+}
+
+.pic {
+display: inline-block;
+padding: 5px;
+background: linear-gradient(130deg, #05b0f7, #ffffff);
+margin: auto;
+border-radius: 50%;
+background-size: 200% 200%;
+animation: animated-gradient 2s linear infinite;
+}
+
+@keyframes animated-gradient{
+25%{
+background-position: left bottom;
+}
+50%{
+background-position: right bottom;
+}
+75%{
+background-position: right top;
+}
+100%{
+background-position: left top;
+}
+}
+
+.pic img {
+display: block;
+width: 150px;
+height: 150px;
+border-radius: 50%;
+}
+
+.name {
+color: #ffffff;
+font-size: 28px;
+font-weight: 600;
+margin: 20px 0;
+}
+
+.desc {
+color: #05b0f7;
+font-size: 18px;
+font-weight: 500;
+margin: 20px 0;
+}
+
+.sm {
+display: flex;
+justify-content: center;
+margin: 30px 0;
+}
+
+.sm a {
+color: #ffffff;
+font-size: 22px;
+width: 56px;
+transition: .3s linear;
+}
+
+.sm a:hover {
+color: #05b0f7;
+}
